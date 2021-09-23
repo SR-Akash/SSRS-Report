@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet2">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (10) [intEmployeeProfessionalInfoId]
+      ,[IntEmployeeId]
+      ,[strEmployeeCode]
+      ,[intAccountId]
+      ,[intBusinessUnitId]
+      ,[strCompanyName]
+      ,[strCompanyBusiness]
+      ,[strCompanyLocation]
+      ,[strDesignation]
+      ,[strDepartment]
+      ,[dteFromServiceLength]
+      ,[dteToServiceLength]
+      ,[strAreaOfExperiences]
+      ,[strResponsibilities]
+      ,[strDocumentLink]
+      ,[IsActive]
+      ,[dteLastActionDateTime]
+      ,[dteServerDateTime]
+      ,[intActionBy]
+      ,[isCurrentlyWorking]
+  FROM [iBOSDDD].[hcm].[tblEmployeeProfessionalInfo]
+  where intAccountId = 2 and intBusinessUnitId = 164</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="intEmployeeProfessionalInfoId">
+        <DataField>intEmployeeProfessionalInfoId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="IntEmployeeId">
+        <DataField>IntEmployeeId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="strEmployeeCode">
+        <DataField>strEmployeeCode</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="intAccountId">
+        <DataField>intAccountId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="intBusinessUnitId">
+        <DataField>intBusinessUnitId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="strCompanyName">
+        <DataField>strCompanyName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strCompanyBusiness">
+        <DataField>strCompanyBusiness</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strCompanyLocation">
+        <DataField>strCompanyLocation</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strDesignation">
+        <DataField>strDesignation</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strDepartment">
+        <DataField>strDepartment</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="dteFromServiceLength">
+        <DataField>dteFromServiceLength</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="dteToServiceLength">
+        <DataField>dteToServiceLength</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="strAreaOfExperiences">
+        <DataField>strAreaOfExperiences</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strResponsibilities">
+        <DataField>strResponsibilities</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strDocumentLink">
+        <DataField>strDocumentLink</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="IsActive">
+        <DataField>IsActive</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="dteLastActionDateTime">
+        <DataField>dteLastActionDateTime</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="dteServerDateTime">
+        <DataField>dteServerDateTime</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="intActionBy">
+        <DataField>intActionBy</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="isCurrentlyWorking">
+        <DataField>isCurrentlyWorking</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

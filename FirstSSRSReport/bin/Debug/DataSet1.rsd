@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (10) [intPersonalInfoId]
+      ,[intEmployeeId]
+      ,[strEmployeeCode]
+      ,[strEmployeeNickName]
+      ,[intAccountId]
+      ,[intBusinessUnitId]
+      ,[intNatinalityId]
+      ,[strNatinalityName]
+      ,[dteDateOfBirth]
+      ,[strBirthPlace]
+      ,[intIdentificationTypeId]
+      ,[strIdentificationType]
+      ,[strIdentificationNo]
+      ,[intGenderId]
+      ,[strGender]
+      ,[intReligionId]
+      ,[strReligion]
+      ,[intBloodGroupId]
+      ,[strBloodGroupName]
+      ,[intHeight(cm)]
+      ,[intWeight(kg)]
+      ,[strPersonalEmail]
+      ,[strEmployeeTINNo]
+      ,[strPersonalContact]
+      ,[strAlternateContact]
+      ,[strResidenceContact]
+      ,[intMaritalStatusId]
+      ,[strMaritalStatus]
+      ,[dteDateOfMarriage]
+      ,[strPhotographLink]
+      ,[strCVLink]
+      ,[strIdentificationDocLink]
+      ,[isActive]
+      ,[dteLastActionDateTime]
+      ,[dteServerDateTime]
+      ,[intActionBy]
+  FROM [iBOSDDD].[hcm].[tblEmployeePersonalInfo]
+  where intAccountId = 2 and intBusinessUnitId = 164</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="intPersonalInfoId">
+        <DataField>intPersonalInfoId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="intEmployeeId">
+        <DataField>intEmployeeId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="strEmployeeCode">
+        <DataField>strEmployeeCode</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strEmployeeNickName">
+        <DataField>strEmployeeNickName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="intAccountId">
+        <DataField>intAccountId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="intBusinessUnitId">
+        <DataField>intBusinessUnitId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="intNatinalityId">
+        <DataField>intNatinalityId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="strNatinalityName">
+        <DataField>strNatinalityName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="dteDateOfBirth">
+        <DataField>dteDateOfBirth</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="strBirthPlace">
+        <DataField>strBirthPlace</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="intIdentificationTypeId">
+        <DataField>intIdentificationTypeId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="strIdentificationType">
+        <DataField>strIdentificationType</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strIdentificationNo">
+        <DataField>strIdentificationNo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="intGenderId">
+        <DataField>intGenderId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="strGender">
+        <DataField>strGender</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="intReligionId">
+        <DataField>intReligionId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="strReligion">
+        <DataField>strReligion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="intBloodGroupId">
+        <DataField>intBloodGroupId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="strBloodGroupName">
+        <DataField>strBloodGroupName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="intHeight_cm_">
+        <DataField>intHeight(cm)</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="intWeight_kg_">
+        <DataField>intWeight(kg)</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="strPersonalEmail">
+        <DataField>strPersonalEmail</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strEmployeeTINNo">
+        <DataField>strEmployeeTINNo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strPersonalContact">
+        <DataField>strPersonalContact</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strAlternateContact">
+        <DataField>strAlternateContact</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strResidenceContact">
+        <DataField>strResidenceContact</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="intMaritalStatusId">
+        <DataField>intMaritalStatusId</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="strMaritalStatus">
+        <DataField>strMaritalStatus</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="dteDateOfMarriage">
+        <DataField>dteDateOfMarriage</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="strPhotographLink">
+        <DataField>strPhotographLink</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strCVLink">
+        <DataField>strCVLink</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="strIdentificationDocLink">
+        <DataField>strIdentificationDocLink</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="isActive">
+        <DataField>isActive</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="dteLastActionDateTime">
+        <DataField>dteLastActionDateTime</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="dteServerDateTime">
+        <DataField>dteServerDateTime</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="intActionBy">
+        <DataField>intActionBy</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
